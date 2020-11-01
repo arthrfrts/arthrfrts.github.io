@@ -1,0 +1,14 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nbundle update"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nbundle exec jekyll serve"
+    }
+  },
+  "identifier" : "74BF8EED-11C1-457D-8A09-A3FF3DB6A135",
+  "openLogOnRun" : "start"
+}

@@ -1,0 +1,52 @@
+# Site settings
+
+title: Arthur Freitas
+email: email@arthr.me
+description: >-
+  O Arthur é um desenvolvedor web que faz sites adoráveis à mão.
+
+lang: pt-BR
+logo: "/assets/images/mii.png"
+
+# Build settings
+
+baseurl: ""
+url: "https://arthr.me"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-archives
+  
+# Plugin: jekyll-seo-tag
+
+author:
+  name: Arthur Freitas
+  twitter: arthrfrts
+
+twitter:
+  username: arthrfrts
+  card: summary
+  
+social:
+  name: Arthur Freitas
+  links:
+    - https://twitter.com/arthrfrts
+    - https://github.com/arthrfrts
+    - https://www.linkedin.com/in/arthrfrts
+    - https://letterboxd.com/arthrfrts
+
+# Plugin: jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - tags
+  layout: archive
+  slug_mode: latin
+  permalinks:
+    year: "/:year/"
+    month: "/:year/:month/"
+    tag: "/tags/:name/"
