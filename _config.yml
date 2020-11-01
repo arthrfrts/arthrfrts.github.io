@@ -13,6 +13,8 @@ logo: "/assets/images/mii.png"
 baseurl: ""
 url: "https://arthr.me"
 
+permalink: "/blog/:year/:month/:title/"
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -47,6 +49,6 @@ jekyll-archives:
   layout: archive
   slug_mode: latin
   permalinks:
-    year: "/:year/"
-    month: "/:year/:month/"
-    tag: "/tags/:name/"
+    year: "/blog/:year/"
+    month: "/blog/:year/:month/"
+    tag: "/blog/tags/:name/"
