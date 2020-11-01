@@ -1,5 +1,6 @@
 {
   "editor.default_syntax" : "liquid",
+  "workspace.color" : 3,
   "workspace.name" : "arthr.me",
   "workspace.preview_append_paths" : false,
   "workspace.preview_type" : "custom",
