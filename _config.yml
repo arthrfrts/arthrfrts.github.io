@@ -13,9 +13,6 @@ collections:
     output: false
 
 # Build settings
-
-incremental: true
-
 baseurl: ""
 url: "https://arthr.me"
 

@@ -9,5 +9,9 @@
     </main>
     
     {% include footer.html %}
+    
+    {% if content contains "iframe" %}
+      <script src="{% link assets/js/embeds.js %}"></script>
+    {% endif %}
   </body>
 </html>
