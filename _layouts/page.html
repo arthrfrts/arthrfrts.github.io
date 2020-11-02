@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<article class="page">
+  <header class="content_header">
+    <h1 class="content_title">
+      {{ page.title }}
+    </h1>
+    
+    {% if page.description %}
+      {{ page.description | markdownify }}
+    {% endif %}
+  </header>
+  
+  <div class="content_body">
+    {{ content }}
+  </div>
+</article>

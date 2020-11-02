@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="page post">
+  {% unless page.title == "" %}
+    <header class="content_header">
+      <h1 class="content_title">
+        {{ page.title }}
+      </h1>
+    </header>
+  {% endunless %}
+  
+  <div class="content_body">
+    {{ content }}
+  </div>
+  
+  {% include post/infos.html post=page %}
+</article>

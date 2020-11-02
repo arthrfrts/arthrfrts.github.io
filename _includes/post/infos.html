@@ -1,0 +1,20 @@
+<footer class="post_colophon">
+  <p class="post_author">Por
+    <a href="{{ site.author.twitter | prepend: 'https://twitter.com/' }}" rel="author">{{ site.author.name }}</a>.</p>
+  
+  <p class="post_info">Publicado em
+    <a href="{{ include.post.url | absolute_url }}" rel="bookmark"><time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%d/%m/%Y" }}</time></a>
+    {%- if include.post.tags.size > 0 -%}
+      {% if include.post.tags.size > 1 %}
+        com as tags
+      {% else %}
+        com a tag
+      {% endif %}
+      
+      {% for tag in include.post.tags %}
+        {% assign tag_url = tag | slugify: 'latin' %}
+        <a href="{{ site.jekyll-archives.permalinks.tag | replace: ':name', tag_url }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+      {%- endfor -%}
+    {%- endif -%}.
+  </p>
+</footer>
