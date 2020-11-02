@@ -1,0 +1,21 @@
+---
+layout: default
+title: "Blog"
+---
+
+<div class="blog">
+  {% for post in paginator.posts %}
+    {% include post.html %}
+  {% endfor %}
+  
+  {% if paginator.total_pages > 1 %}
+    <nav class="blog_pagination">
+      {% if paginator.previous_page %}
+        <a class="page_prev" href="{{ paginator.previous_page_path }}" rel="prev">&laquo; Posts mais recentes</a>
+      {% endif %}
+      {% if paginator.next_page %}
+        <a class="page_next" href="{{ paginator.next_page_path }}" rel="next">Posts anteriores &raquo;</a>
+      {% endif %}
+    </nav>
+  {% endif %}
+</div>
