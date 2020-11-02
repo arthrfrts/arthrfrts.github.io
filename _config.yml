@@ -13,6 +13,9 @@ collections:
     output: false
 
 # Build settings
+
+incremental: true
+
 baseurl: ""
 url: "https://arthr.me"
 
@@ -71,6 +74,7 @@ jekyll-archives:
     tag: "/blog/tags/:name/"
 
 # Plugin: jekyll-compose
+
 jekyll_compose:
   auto_open: true
   default_front_matter:
