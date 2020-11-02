@@ -295,6 +295,16 @@ details {
   }
 }
 
+.post {
+  .content_header {
+    margin-bottom: var(--spacing-unit);
+    
+    h1 {
+      font-size: 2.25rem;
+    }
+  }
+}
+
 /*
   Site Footer
 */

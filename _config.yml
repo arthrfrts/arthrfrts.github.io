@@ -11,10 +11,13 @@ logo: "/assets/images/mii.png"
 collections:
   projects:
     output: false
+  games:
+    output: true
+    permalink: "/jogos/:title/"
 
 # Build settings
 
-incremental: true
+# incremental: true
 
 baseurl: ""
 url: "https://arthr.me"

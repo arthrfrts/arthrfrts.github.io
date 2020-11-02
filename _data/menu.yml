@@ -1,7 +1,10 @@
-- title: Blog
-  url: "/blog/"
 - title: Contato
   url: "/contato/"
+- title: Blog
+  url: "/blog/"
+- title: Jogos
+  url: "/jogos/"
 - title: Etc.
-  url: "https://arthrfrts.tumblr.com/"
+  url: "https://etc.tumblr.com/"
+  external: true
  

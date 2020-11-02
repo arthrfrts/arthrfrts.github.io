@@ -1,0 +1,19 @@
+---
+layout: page
+title: Jogos
+description: Eu desenvolvo pequenos jogos narrativos no meu tempo livre. Você pode jogá-los direto do seu navegador.
+---
+
+{% assign sorted_games = site.games | sort: "title" %}
+
+{% for game in sorted_games %}
+  <details>
+    <summary>{{ game.title }}</summary>
+    
+    {{ game.description | markdownify }}
+    
+    <p>
+      <a href="{{ game.url | relative_url }}" rel="bookmark">Jogar <em>{{ game.title }}</em> ↗</a>
+    </p>
+  </details>
+{% endfor %}
