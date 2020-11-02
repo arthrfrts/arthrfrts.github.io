@@ -50,6 +50,7 @@
       font-size: var(--base-font-size);
       font-weight: 900;
       margin-right: auto;
+      margin-bottom: 0;
       
       @include media-query($on-palm) {
         margin-left: auto;
@@ -88,7 +89,11 @@
       
       .menu_item {
         display: inline-block;
-        border-bottom: 2px solid var(--color-link);
+        
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
         
         &:not(:last-child) {
           margin-right: 1rem;
@@ -129,6 +134,65 @@
   }
 }
 
+// Content
+
+.content_body,
+.post_body {
+  p, ul, ol, dl,
+  blockquote, pre {
+    max-width: var(--content-width);
+  }
+  
+  iframe, figure,
+  img, table,
+  .full-width {
+    max-width: 100%
+  }
+}
+
+// Home
+details {
+  & + details {
+    margin-top: var(--spacing-unit);
+  }
+  
+  &[open] {
+    summary {
+      color: var(--color-link);
+    }
+  }
+  
+  summary {
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--color-text);
+    transition: color 350ms ease;
+    cursor: pointer;
+    list-style-type: none;
+    
+    &::-webkit-details-marker {
+      display: none;
+    }
+    
+    &::marker {
+      display: none;
+    }
+    
+    &:focus {
+      outline: none;
+    }
+    
+    &:hover,
+    &:focus {
+      color: var(--color-link);
+    }
+    
+    & + * {
+      margin-top: var(--spacing-unit);
+    }
+  }
+}
+
 /*
   Site Footer
 */
@@ -144,7 +208,6 @@
   
   p {
     @extend %grid-content;
-    margin-bottom: 1rem;
     text-align: right;
     
     &.main_info {
@@ -164,6 +227,7 @@
     
     &:hover,
     &:focus {
+      text-decoration: none;
       color: var(--color-link);
     }
   }

@@ -1,3 +1,21 @@
 ---
 layout: default
 ---
+
+<article class="page">
+  <header class="content_header">
+    {{ content }}
+  </header>
+  
+  <div class="content_body">
+    {% assign sorted_projects = site.projects | sort: "title" %}
+    
+    {% for project in sorted_projects %}
+      <details>
+        <summary>{{ project.title }}</summary>
+        
+        {{ project.content }}
+      </details>
+    {% endfor %}
+  </div>
+</article>

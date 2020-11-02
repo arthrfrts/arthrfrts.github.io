@@ -8,6 +8,10 @@ description: >-
 lang: pt-BR
 logo: "/assets/images/mii.png"
 
+collections:
+  projects:
+    output: false
+
 # Build settings
 
 incremental: true
