@@ -1,7 +1,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% unless page.url == "/" or page.title == "" %}{{ page.title }} ~ {% endunless -%}{{ site.title }}</title>
+  <title>
+    
+    {% unless page.url == "/" or page.title == "" or page.title == nil %}
+      {{- page.title }} ~ 
+    {% endunless -%}
+    
+    {{- site.title -}}
+  </title>
   {% seo title=false %}
   
   <link rel="stylesheet" type="text/css" href="{{ '/assets/css/screen.css' | relative_url }}" />
