@@ -15,6 +15,9 @@ url: "https://arthr.me"
 
 permalink: "/blog/:year/:month/:title/"
 
+keep_files:
+  - uploads
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
