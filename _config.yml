@@ -27,6 +27,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-compose
   - jekyll-archives
   - jekyll-paginate
   
@@ -68,3 +69,12 @@ jekyll-archives:
     year: "/blog/:year/"
     month: "/blog/:year/:month/"
     tag: "/blog/tags/:name/"
+
+# Plugin: jekyll-compose
+jekyll_compose:
+  auto_open: true
+  default_front_matter:
+    drafts:
+      tags:
+    posts:
+      tags:
