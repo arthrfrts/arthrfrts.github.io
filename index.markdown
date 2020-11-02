@@ -1,5 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+
+# Olá!
+
+Eu sou um desenvolvedor web há mais de dez anos. Eu faço adoráveis sites à mão para pessoas bacanas.

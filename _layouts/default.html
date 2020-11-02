@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}" {%- if page.layout %} class="{{ page.layout }}"{% endif %}>
+<html lang="{{ site.lang }}" {%- if page.layout %} class="site {{ page.layout | prepend: 'layout_' }}"{% endif %}>
   {% include head.html %}
   <body>
     {% include header.html %}

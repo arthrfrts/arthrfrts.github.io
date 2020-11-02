@@ -10,6 +10,8 @@ logo: "/assets/images/mii.png"
 
 # Build settings
 
+incremental: true
+
 baseurl: ""
 url: "https://arthr.me"
 
@@ -17,6 +19,8 @@ permalink: "/blog/:year/:month/:title/"
 
 keep_files:
   - uploads
+  - assets/fonts
+  - assets/images
 
 plugins:
   - jekyll-feed
