@@ -97,6 +97,17 @@ iframe {
   width: 100%;
 }
 
+video, img {
+  max-width: 100%
+}
+
+img + em {
+  display: block;
+  border-left: 2px solid var(--color-link);
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
 // Forms
 input[type="text"],
 input[type="email"],
