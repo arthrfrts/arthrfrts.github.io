@@ -65,7 +65,7 @@
 
   iframes = document.getElementsByTagName('iframe');
 
-  isVideo = /(youtube)|(vimeo)|(cloudup)|(spotify)|(serialpodcast)|(twitch)|(stownpodcast)/i;
+  isVideo = /(youtube)|(vimeo)|(tumblr)|(cloudup)|(spotify)|(serialpodcast)|(twitch)|(stownpodcast)/i;
 
   videos = _filter(iframes, function(iframe) {
     return isVideo.test(iframe.getAttribute('src'));

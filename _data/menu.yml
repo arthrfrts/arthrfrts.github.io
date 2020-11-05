@@ -1,10 +1,8 @@
 - title: Contato
   url: "/contato/"
-- title: Blog
-  url: "/blog/"
 - title: Jogos
   url: "/jogos/"
-- title: Etc.
-  url: "https://etc.arthr.me/"
+- title: Blog
+  url: "https://blog.arthr.me/"
   external: true
  

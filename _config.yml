@@ -22,25 +22,22 @@ collections:
 baseurl: ""
 url: "https://arthr.me"
 
-permalink: "/blog/:year/:month/:title/"
+permalink: "/:title/"
 
 keep_files:
-  - uploads
   - assets/fonts
   - assets/images
+  
+exclude:
+  - uploads
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
 
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-compose
-  - jekyll-archives
-  - jekyll-paginate
-  
-# Plugin: jekyll-paginate
-
-paginate: 12
-paginate_path: "/blog/p/:num/"
   
 # Plugin: jekyll-seo-tag
 
@@ -59,29 +56,3 @@ social:
     - https://github.com/arthrfrts
     - https://www.linkedin.com/in/arthrfrts
     - https://letterboxd.com/arthrfrts
-
-seo_paginator_message: "Blog (página %<current>s) ~ "
-
-# Plugin: jekyll-archives
-
-jekyll-archives:
-  enabled:
-    - year
-    - month
-    - tags
-  layout: archive
-  slug_mode: latin
-  permalinks:
-    year: "/blog/:year/"
-    month: "/blog/:year/:month/"
-    tag: "/blog/tags/:name/"
-
-# Plugin: jekyll-compose
-
-jekyll_compose:
-  auto_open: true
-  default_front_matter:
-    drafts:
-      tags:
-    posts:
-      tags:
