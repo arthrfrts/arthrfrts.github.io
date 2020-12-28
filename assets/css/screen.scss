@@ -2,56 +2,52 @@
 # Hello, Jekyll!
 ---
 
-:root {
-  --base-font-family: Inter, system-ui, sans-serif;
-  --base-font-size: 16px;
-  --base-line-height: 1.5;
-  --color-background: #fff;
-  --color-text: #00101c;
-  --color-link: #0267ff;
-  --color-accent: #00db41;
-  --color-highlight: #f6fa53;
-  --content-width: 640px;
-  --spacing-unit: 1.5em;
-}
+$content-font-family: system-ui, sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text: #fff;
-    --color-background: #00101c;
-    --color-link: #f6fa53;
-    --color-highlight: #0267ff;
+@import "{{ site.theme }}";
+
+details {
+  & + details {
+    margin-top: $spacing-unit / 2;
+  }
+  
+  &[open] {
+    summary {
+      color: $color-details;
+    }
+  }
+  
+  summary {
+    font-weight: bold;
+    @include relative-font-size(1.4);
+    color: $color-details-darker;
+    transition: color 350ms ease;
+    cursor: pointer;
+    list-style-type: none;
+    
+    &::-webkit-details-marker {
+      display: none;
+    }
+    
+    &::marker {
+      display: none;
+    }
+    
+    &:focus {
+      outline: none;
+    }
+    
+    &:hover,
+    &:focus {
+      color: $color-details;
+    }
+    
+    & + * {
+      margin-top: $spacing-unit / 4;
+    }
+  }
+  
+  a {
+    font-weight: bold;
   }
 }
-
-// Variables only used with mixins.
-$on-laptop: 800px;
-$on-palm: 600px;
-
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
-@include media-query($on-palm) {
-  :root {
-    font-size: 90%;
-  }
-}
-
-%grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr minmax(auto, 920px) 1fr 1fr;
-}
-
-%grid-content {
-  grid-column: 3/4;
-  padding-left: 3vw;
-  padding-right: 3vw;
-}
-
-
-@import "fonts",
-        "layout",
-        "base";

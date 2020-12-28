@@ -8,4 +8,4 @@ O código-fonte desse blog está disponível sob a licença MIT, mas o conteúdo
 
 ## Créditos
 
-Esse site é feito com o [Jekyll](https://jekyllrb.com/) e hospedado no GitHub Pages usando o [jekyll-actions](https://github.com/marketplace/actions/jekyll-actions) de [@helaili](https://github.com/helaili).
+Esse site é feito com o [Jekyll](https://jekyllrb.com/) usando o tema [Charlie](https://github.com/arthrfrts/jekyll-theme-charlie) e hospedado no GitHub Pages usando o [jekyll-actions](https://github.com/marketplace/actions/jekyll-actions) de [@helaili](https://github.com/helaili).

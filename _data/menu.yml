@@ -1,8 +1,10 @@
+- title: Projetos
+  url: "/"
 - title: Contato
   url: "/contato/"
+- title: Escrita
+  url: "https://paomortadela.com.br"
+  external: true
 - title: Jogos
   url: "/jogos/"
-- title: Blog
-  url: "https://blog.arthr.me/"
-  external: true
  

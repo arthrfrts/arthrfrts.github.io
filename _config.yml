@@ -1,6 +1,7 @@
 # Site settings
 
 title: Arthur Freitas
+tagline: Desenvolvedor front-end e consultor WordPress.
 email: email@arthr.me
 description: >-
   O Arthur é um desenvolvedor web que faz sites adoráveis à mão.
@@ -17,7 +18,7 @@ collections:
 
 # Build settings
 
-# incremental: true
+theme: jekyll-theme-charlie
 
 baseurl: ""
 url: "https://arthr.me"
@@ -25,7 +26,6 @@ url: "https://arthr.me"
 permalink: "/:title/"
 
 keep_files:
-  - assets/fonts
   - assets/images
   
 exclude:
@@ -34,10 +34,6 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
   
 # Plugin: jekyll-seo-tag
 
