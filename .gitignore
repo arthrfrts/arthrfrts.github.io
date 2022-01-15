@@ -9,7 +9,7 @@ _site/
 .jekyll-metadata
 
 # Notes graph metadata
-_includes/notes_graph.json
+_includes/posts_graph.json
 
 # Obsidian config
 .obsidian/
