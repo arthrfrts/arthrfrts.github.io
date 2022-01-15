@@ -12,6 +12,7 @@ timezone: "America/Sao_Paulo"
 
 author:
   name: Arthur Freitas
+  twitter: arthrfrts
   url: "https://arthr.me"
 
 # 🌱 settings
@@ -30,8 +31,15 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: "_pages"
+    values:
+      layout: "page"
 
 permalink: "/jardim/:title/"
+
+include:
+  - _pages
 
 exclude:
 - _includes/posts_graph.json
