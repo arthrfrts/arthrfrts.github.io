@@ -1,4 +1,8 @@
 ---
+title: move your body
+tags:
+  - a tag
+  - another tag
 ---
 
 Move your body every day. Benefits include:
