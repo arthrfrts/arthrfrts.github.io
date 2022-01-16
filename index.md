@@ -1,22 +1,13 @@
 ---
 layout: page
-title: Home
-id: home
-permalink: /
 ---
 
-# Welcome! 🌱
+# Olá! 👋
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
-</p>
+Eu me chamo Arthur.
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
+Eu faço sites e ajudo pessoas a se expressarem melhor na internet. Atualmente, eu desenvolvo sites e interfaces para a web na [Compass](https://compass.uol).
 
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll). If you need any help, my [DMs are open on Twitter (@vaillancourtmax)](https://twitter.com/vaillancourtmax). 👋
+Se quiser falar comigo, você pode me [mandar um email](mailto:email@arthr.me). Se quiser saber mais sobre mim, [fique a vontade]({% link _pages/sobre.md %}).
 
-<style>
-  .wrapper {
-    max-width: 46em;
-  }
-</style>
+Esse é o meu [[jardim digital]], onde eu organizo minhas ideias sobre aquilo que eu estou aprendendo, pesquisando, lendo, ou matutando de outras formas.
