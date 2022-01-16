@@ -1,0 +1,21 @@
+---
+---
+
+:root {
+  --color-background: hsla(50, 100%, 95%, 1);
+  --color-text: hsla(36, 19%, 44%, 1);
+  --color-text-subtle: hsla(36, 19%, 44%, 0.65);
+  --color-link-internal: hsla(48, 100%, 50%, 1);
+  --color-link-external: hsla(190, 97%, 42%, 1);
+
+  @media screen and (prefers-color-scheme: dark) {
+    --color-background: hsla(211, 35%, 25%, 1);
+    --color-text: hsla(181, 87%, 91%, 1);
+    --color-text-subtle: hsla(181, 87%, 91%, 0.65);
+    --color-link-internal: hsla(190, 97%, 42%, 1);
+    --color-link-external: hsla(48, 100%, 50%, 1);
+  }
+}
+
+@import "base";
+

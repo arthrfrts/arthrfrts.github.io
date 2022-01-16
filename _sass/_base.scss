@@ -1,0 +1,37 @@
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font: normal 1rem/1.65 system-ui;
+}
+
+a {
+  color: currentColor;
+  text-decoration: underline;
+  text-decoration-color: var(--color-link-internal);
+  text-decoration-thickness: 0.15em;
+  transition: all 150ms ease;
+
+  &:hover,
+  &:focus {
+    color: var(--color-link-internal);
+  }
+
+  &[href^="http"] {
+    font-weight: bold;
+    color: var(--color-link-external);
+    box-shadow: none;
+    text-decoration: none;
+
+    &::after {
+      content: "↗";
+      vertical-align: top;
+      font-size: 0.65em;
+      margin-left: 0.25em;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--color-text-subtle);
+    }
+  }
+}
