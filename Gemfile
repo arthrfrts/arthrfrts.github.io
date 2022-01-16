@@ -13,3 +13,4 @@ gem "jekyll-seo-tag", "~> 2.7", :group => :jekyll_plugins
 gem "jekyll-loading-lazy", "~> 0.1.1", :group => :jekyll_plugins
 gem "jekyll-archives", "~> 2.2", :group => :jekyll_plugins
 gem "jekyll-last-modified-at", "~> 1.3", :group => :jekyll_plugins
+gem "jekyll-compose", "~> 0.12.0", :group => :jekyll_plugins
