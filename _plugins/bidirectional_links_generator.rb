@@ -55,7 +55,7 @@ class BidirectionalLinksGenerator < Jekyll::Generator
       current_post.content = current_post.content.gsub(
         /\[\[([^\]]+)\]\]/i, # match on the remaining double-bracket links
         <<~HTML.delete("\n") # replace with this HTML (\\1 is what was inside the brackets)
-          <span title='There is no post that matches this link.' class='invalid-link'>
+          <span title='Nenhuma nota coincide com esse link.' class='invalid-link'>
             <span class='invalid-link-brackets'>[[</span>
             \\1
             <span class='invalid-link-brackets'>]]</span></span>

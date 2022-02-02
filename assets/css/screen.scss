@@ -2,12 +2,24 @@
 ---
 
 :root {
-  --color-background: #fff;
-  --color-text: #212733;
-  --color-subtle: #fcfcfc;
-  --font-family--base: system-ui, sans-serif;
+  --color-background: hsl(0, 0%, 100%);
+  --color-text: hsl(220, 21%, 17%);
+  --color-subtle: hsl(0, 0%, 99%);
+  --color-border: hsl(0, 0%, 87%);
+  --color-link: hsl(190, 97%, 42%);
+  --color-link-background: hsla(190, 97%, 42%, 0.157);
+  --font-family--base: Graphik, system-ui, sans-serif;
   --font-family--code: Consolas, Monaco, "Courier New", monospace;
   --font-family--mono: "Courier 10 Pitch", Courier, monospace;
+
+  @media screen and (prefers-color-scheme: dark) {
+    --color-background: hsl(210, 34%, 24%);
+    --color-subtle: hsla(0, 0%, 4%, .5);
+    --color-border: hsla(60, 100%, 95%, 0.25);
+    --color-text: hsl(183, 100%, 92%);
+    --color-link: hsl(48, 100%, 50%);
+    --color-link-background: hsla(48, 100%, 50%, 0.15);
+  }
 }
 
 @import "elements";

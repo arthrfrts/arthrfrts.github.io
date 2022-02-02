@@ -1,4 +1,46 @@
 /**
+ Links
+**/
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  background-color: transparent;
+  transition: background 150ms ease;
+  border-radius: 3px;
+  padding: 0 3px;
+
+  &.internal-link,
+  &[href^="/jardim/"] {
+    text-decoration: underline;
+    text-decoration-color: var(--color-border);
+  }
+
+  &[href^="http"] {
+    &::after {
+      content: "↗";
+      font-size: .75em;
+      vertical-align: top;
+      opacity: 0.5;
+    }
+  }
+
+  &:hover,
+  &:focus{
+    background-color: var(--color-link-background);
+  }
+}
+
+.invalid-link {
+  color: var(--color-border);
+  cursor: not-allowed;
+
+  &-brackets {
+    opacity: 0.5;
+  }
+}
+
+/**
  * Headings
 **/
 
@@ -30,4 +72,13 @@ h2 {
 
 h1 {
   font-size: 2.5rem;
+}
+
+/**
+ * Media
+**/
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
 }
