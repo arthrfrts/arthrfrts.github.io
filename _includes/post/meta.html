@@ -1,0 +1,19 @@
+{% if include.post.draft != true %}
+  {% assign type_class = "type_draft" %}
+  {% assign type_title = "Nota" %}
+  {% assign type_description = "Anotações, observações ou textos ainda não finalizados. As ideias contidas aqui podem e provavelmente vão mudar, ou ficar mais inteligíveis, com o tempo." %}
+{% else %}
+  {% assign type_class = "type_post" %}
+  {% assign type_title = "Post" %}
+  {% assign type_description = 'Textos e ensaios amadurecidos. Suas ideias foram pesquisadas e revisadas com o tempo, e eu me sinto seguro em "publicá-las". Isso não significa que esses textos não podem mudar com o tempo, mas sua estrutura deve ficar mais ou menos a mesma que essa que você vai ler a seguir.' %}
+{% endif %}
+
+<p>
+  <span class="type-badge {{ type_class }}" aria-label="{{ type_description | smartify  }}">
+    {{ type_title | smartify  }}
+  </span>
+
+  <time class="post-date" datetime="{{ page.last_modified_at | date_to_xmlschema }}">
+    Atualizado em {{ page.last_modified_at | date: "%d/%m/%Y às %H:%M" }}
+  </time>
+</p>

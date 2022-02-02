@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang }}">
-  {% include head.html %}
-  <body>
-    {% include nav.html %}
+{% include head.html %}
 
-    <main class="wrapper">
-      {{ content }}
-    </main>
+<body>
+  {% include nav.html %}
 
-    {% include footer.html %}
-    {% include previews.html wrapperQuerySelector="content" %}
-  </body>
+  <main class="wrapper">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+  {% include previews.html wrapperQuerySelector=".content-container" %}
+</body>
+
 </html>
