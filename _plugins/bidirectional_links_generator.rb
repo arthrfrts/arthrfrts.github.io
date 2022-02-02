@@ -64,9 +64,9 @@ class BidirectionalLinksGenerator < Jekyll::Generator
     end
 
     # Identify post backlinks and add them to each post
-    all_posts.each do |current_post|
+    all_docs.each do |current_post|
       # Nodes: Jekyll
-      posts_linking_to_current_post = all_posts.filter do |e|
+      posts_linking_to_current_post = all_docs.filter do |e|
         e.content.include?(current_post.url)
       end
 
