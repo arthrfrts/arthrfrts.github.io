@@ -1,3 +1,14 @@
 ---
 ---
 
+:root {
+  --color-background: #fff;
+  --color-text: #212733;
+  --color-subtle: #fcfcfc;
+  --font-family--base: system-ui, sans-serif;
+  --font-family--code: Consolas, Monaco, "Courier New", monospace;
+  --font-family--mono: "Courier 10 Pitch", Courier, monospace;
+}
+
+@import "elements";
+@import "base";

@@ -9,13 +9,11 @@ layout: default
     {% include post/meta.html post=page %}
   </header>
 
-  <div id="entry-container" class="content-container">
-    <div class="content-body">
-      {{ content }}
-    </div>
-
-    {% include post/backlinks.html %}
+  <div class="content-body">
+    {{ content }}
   </div>
+
+  {% include post/backlinks.html %}
 
   {% include post/tags.html %}
 </article>
