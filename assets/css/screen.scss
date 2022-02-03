@@ -8,9 +8,10 @@
   --spacing-unit: 3rem;
   --border-radius: .3rem;
 
-  --font-family__base: "Inter", system-ui, sans-serif;
-  --font-family__code: "Inconsolata", Monaco, Consolas, "DejaVu Sans Mono", monospace;
+  --font-family__base: "Noto Sans", system-ui, -apple-system, sans-serif;
+  --font-family__code: Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", "Noto Sans Mono", monospace;
   --font-family__mono: "Courier Prime", "Courier 10 Pitch", Courier, monospace;
+  --font-family__quote: "Iowan Old Style", "Hofler Text", Baskerville, Georgia, "Times New Roman", "Source Serif Pro", "Noto Serif", serif;
   --font-size: 16px;
   --font-size__small: .8rem;
 

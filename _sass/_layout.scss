@@ -204,6 +204,16 @@ body {
 }
 
 /*
+  Garden
+*/
+
+.posts-index,
+.posts-map {
+  grid-column-start: 1;
+  grid-column-end: end;
+}
+
+/*
   Footer
 */
 

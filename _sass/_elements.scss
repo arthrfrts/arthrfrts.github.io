@@ -182,7 +182,7 @@ h1 {
 blockquote {
   background: var(--color-details);
   padding: calc(var(--spacing-unit) / 4);
-  font-family: Palatino, "Palatino Linotype", Georgia, serif;
+  font-family: var(--font-family__quote);
   font-size: 1.25rem;
   font-style: italic;
 
@@ -210,6 +210,7 @@ pre, kbd, var, code {
 
 kbd, var, code {
   padding: 0 5px;
+  font-size: .9em;
 }
 
 pre {
