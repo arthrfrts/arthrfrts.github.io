@@ -27,7 +27,7 @@ Eu vou tentar manter esse cantinho aqui atualizado mensalmente com coisas nem t�
 
 <dl>
   <dt>Fevereiro de 2022</dt>
-  <dd>A reforma do meu apartamento acabou no dia 2, e minha mudança vai começar no dia 5. Eu terminei o redesign desse site e do [Irrelefante](https://irrelefante.com.br). Eu tô lendo ===A Balada do Café Triste=== de Carson McCullers, e jogando ===Link's Awakening=== no Switch (de novo!). Eu tô assistindo ===The Gilded Age=== e ===Plantão Médico=== na HBO Max, e ouvindo o podcast ===The Trojan Horse Affair=== (além de ===The Next Picture Show===, mas esse é sempre).</dd>
+  <dd>A reforma do meu apartamento acabou no dia 2, e minha mudança vai começar no dia 5. Eu terminei o redesign desse site e do <a href="https://irrelefante.com.br/" rel="me">Irrelefante</a>. Eu tô lendo ===A Balada do Café Triste=== de Carson McCullers, e jogando ===Link's Awakening=== no Switch (de novo!). Eu tô assistindo ===The Gilded Age=== e ===Plantão Médico=== na HBO Max, e ouvindo o podcast ===The Trojan Horse Affair=== (além de ===The Next Picture Show===, mas esse é sempre).</dd>
 </dl>
 
   
