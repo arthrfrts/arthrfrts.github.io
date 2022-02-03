@@ -1,6 +1,6 @@
 <nav class="site-menu">
   <strong class="site-title">
-    O jardim digital de <a href="{{ '/' | relative_url }}" rel="me">{{ site.title }}</a>
+    O jardim digital de <a href="{{ '/' | relative_url }}" rel="author">{{ site.title }}</a>
   </strong><br />
   {% for item in site.data.menu %}
     <a class="nav-link" href="{{ item.url }}" {% if item.external %}rel="external"{% endif %}>

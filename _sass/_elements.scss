@@ -29,6 +29,20 @@ ul, ol, dl, figure,
   color: var(--color-background);
 }
 
+[align="left"] {
+  float: left;
+  width: 300px;
+  max-width: 50%;
+  margin-right: calc(var(--spacing-unit) / 3);
+}
+
+[align="right"] {
+  float: right;
+  width: 300px;
+  max-width: 50%;
+  margin-left: calc(var(--spacing-unit) / 3);
+}
+
 strong, b {
   font-weight: 700;
 }

@@ -26,6 +26,7 @@ LINKS BI-DIRECIONAIS POR
 Maxime Vaillancourt <maximevaillancourt.com>
 
 USANDO
+D3.js <@d3>
 jekyll-feed <@jekyll>
 jekyll-json-feed <@lildude>
 jekyll-seo-tag <@jekyll>
