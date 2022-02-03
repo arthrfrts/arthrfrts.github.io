@@ -59,6 +59,7 @@ ins, mark {
   background-color: var(--color-link__hover);
   text-shadow: 0 2px .5em var(--color-details__shadow);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   padding-left: .1em;
   padding-right: .1em;
