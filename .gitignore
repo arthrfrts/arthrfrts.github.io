@@ -16,7 +16,3 @@ _includes/posts_graph.json
 
 # Obsidian config
 .obsidian/
-
-# Temp: removes posts and drafts from tracking
-_posts
-_drafts
