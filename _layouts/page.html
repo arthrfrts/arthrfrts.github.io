@@ -3,14 +3,13 @@ layout: default
 ---
 
 <article class="content">
-  <header class="content-header">
-    <h1 class="content-title">{{ page.title }}</h1>
+  {% if page.title %}
+    <header class="content-header">
+      <h1 class="content-title">{{ page.title }}</h1>
+    </header>
+  {% endif %}
 
-  </header>
-
-  <div id="entry-container" class="content-container">
-    <div class="content-body">
-      {{ content }}
-    </div>
+  <div class="content-body">
+    {{ content }}
   </div>
 </article>
