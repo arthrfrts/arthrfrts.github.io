@@ -253,3 +253,65 @@ img + em {
   font-weight: 550;
   font-style: normal;
 }
+
+/*
+  Forms
+*/
+
+label {
+  display: block;
+  font-weight: 550;
+  font-size: var(--font-size__small);
+}
+
+input, button, textarea {
+  font: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: .2rem .5rem;
+  border-radius: var(--border-radius);
+  border: none;
+  box-shadow: none;
+}
+
+input, textarea {
+  width: 100%;
+  background: var(--color-details);
+  border-bottom: 1px solid var(--color-details__border);
+  cursor: text;
+  color: var(--color-text);
+  transition: border-bottom-color 100ms ease;
+
+  &:focus {
+    border-bottom-color: var(--color-text);
+    outline: none;
+  }
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: var(--color-text);
+  border-bottom: 1px solid var(--color-text);
+  color: var(--color-background);
+  transition-property: color, background-color, border-bottom-color;
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: var(--font-size__small);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-details__border);
+    color: var(--color-text);
+    cursor: pointer;
+  }
+
+  &:active {;
+    border-bottom: none;
+    border-top: 1px solid var(--color-text);
+  }
+}
