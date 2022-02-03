@@ -1,38 +1,88 @@
-/**
- Links
-**/
+/*
+  Basic styling
+*/
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  &:not(:last-child) {
+    margin-bottom: calc(var(--spacing-unit) / 2);
+  }
+}
+
+::selection {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
+
+/*
+  Links
+*/
 
 a {
   color: var(--color-link);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--color-details__border);
   background-color: transparent;
-  transition: background 150ms ease;
-  border-radius: 3px;
-  padding: 0 3px;
+  transition: color 100ms ease;
+  font-weight: 550;
 
-  &.internal-link,
-  &[href^="/jardim/"] {
-    text-decoration: underline;
-    text-decoration-color: var(--color-border);
+  & > strong {
+    font-weight: 700;
   }
 
   &[href^="http"] {
     &::after {
       content: "↗";
-      font-size: .75em;
+      font-size: var(--font-size__small);
       vertical-align: top;
-      opacity: 0.5;
+      font-weight: 700;
     }
+  }
+
+  &[href^="mailto:"] {
+    &::after {
+      content: " ✉";
+      font-size: var(--font-size__small);
+      vertical-align: top;
+      font-weight: 550;
+    }
+  }
+
+  &[rel="tag"] {
+    display: inline-block;
+    background: var(--color-details);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color-text__subtle);
+    padding: 3px 7px;
+    margin-right: calc(var(--spacing-unit) / 4);
+    font-size: var(--font-size__small);
   }
 
   &:hover,
   &:focus{
-    background-color: var(--color-link-background);
+    color: var(--color-link__hover);
   }
 }
 
 .invalid-link {
-  color: var(--color-border);
+  color: var(--color-text__subtle);
   cursor: not-allowed;
 
   &-brackets {
@@ -40,14 +90,65 @@ a {
   }
 }
 
-/**
- * Headings
-**/
+/*
+  Lists
+*/
+
+ul, ol, dl {
+  margin-left: 1.5rem;
+}
+
+ul {
+  list-style: disc;
+
+  ul {
+    list-style: square;
+  }
+}
+
+ol {
+  list-style: decimal;
+
+  ol {
+    list-style: lower-alpha;
+
+    ol {
+      list-style: lower-roman;
+    }
+  }
+}
+
+ul, ol {
+  li {
+    margin-top: calc(var(--spacing-unit) / 4);
+    margin-bottom: calc(var(--spacing-unit) / 4);
+  }
+
+  ul, ol {
+    margin-bottom: 0;
+  }
+}
+
+dl {
+  dt {
+    font-weight: 700;
+  }
+}
+
+.footnotes {
+  border-top: 1px solid var(--color-details__border);
+  margin-top: calc(var(--spacing-unit) / 2);
+  padding-top: calc(var(--spacing-unit) / 2);
+  font-size: var(--font-size__small);
+}
+
+/*
+  Headings
+*/
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 h6 {
@@ -74,11 +175,80 @@ h1 {
   font-size: 2.5rem;
 }
 
-/**
- * Media
-**/
+/*
+  Quotes
+*/
 
-img {
+blockquote {
+  background: var(--color-details);
+  padding: calc(var(--spacing-unit) / 4);
+  font-family: Palatino, "Palatino Linotype", Georgia, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+
+  cite {
+    display: block;
+    font-size: var(--font-size__small);
+    font-family: var(--font-family__base);
+    font-style: normal;
+    font-weight: 380;
+
+    &::before {
+      content: "— ";
+    }
+  }
+}
+
+/*
+  Code and pre-formatted text
+*/
+
+pre, kbd, var, code {
+  background-color: var(--color-details);
+  border-radius: var(--border-radius);
+}
+
+kbd, var, code {
+  padding: 0 5px;
+}
+
+pre {
+  padding: calc(var(--spacing-unit) / 4);
+  margin-bottom: calc(var(--spacing-unit) / 2);
+
+  & > code {
+    background: none;
+    padding: 0;
+  }
+}
+
+code, kbd {
+  font-family: var(--font-family__code);
+}
+
+pre, var {
+  font-family: var(--font-family__mono);
+}
+
+/*
+  Media
+*/
+
+img, iframe, video, audio, object, embed {
   max-width: 100%;
-  border-radius: 6px;
+  border-radius: var(--border-radius);
+}
+
+iframe, video, object, embed {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+}
+
+img + em {
+  display: block;
+  text-align: right;
+  color: var(--color-text__subtle);
+  font-size: var(--font-size__small);
+  font-weight: 550;
+  font-style: normal;
 }

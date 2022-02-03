@@ -2,25 +2,48 @@
 ---
 
 :root {
+  --screen-large: 1200px;
+  --screen-medium: 800px;
+  --screen-small: 600px;
+  --spacing-unit: 3rem;
+  --border-radius: .3rem;
+
+  --font-family__base: "Inter", system-ui, sans-serif;
+  --font-family__code: "Inconsolata", Monaco, Consolas, "DejaVu Sans Mono", monospace;
+  --font-family__mono: "Courier Prime", "Courier 10 Pitch", Courier, monospace;
+  --font-size: 16px;
+  --font-size__small: .8rem;
+
+  @supports (font-feature-settings: normal) {
+    --font-family__base: "Inter var", system-ui, sans-serif;
+  }
+
   --color-background: hsl(0, 0%, 100%);
-  --color-text: hsl(220, 21%, 17%);
-  --color-subtle: hsl(0, 0%, 99%);
-  --color-border: hsl(0, 0%, 87%);
-  --color-link: hsl(190, 97%, 42%);
-  --color-link-background: hsla(190, 97%, 42%, 0.157);
-  --font-family--base: Graphik, system-ui, sans-serif;
-  --font-family--code: Consolas, Monaco, "Courier New", monospace;
-  --font-family--mono: "Courier 10 Pitch", Courier, monospace;
+  --color-text: hsl(192, 3%, 33%);
+  --color-text__subtle: hsla(180, 2%, 33%, 0.5);
+  --color-link: hsl(191, 100%, 42%);
+  --color-link__hover: hsl(35, 100%, 48%);
+  --color-details: hsl(0, 0%, 99%);
+  --color-details__border: hsl(0, 0%, 87%);
+  --color-details__shadow: hsla(0, 0%, 87%, 0.5);
 
   @media screen and (prefers-color-scheme: dark) {
     --color-background: hsl(210, 34%, 24%);
-    --color-subtle: hsla(0, 0%, 4%, .5);
-    --color-border: hsla(60, 100%, 95%, 0.25);
-    --color-text: hsl(183, 100%, 92%);
+    --color-text: hsl(0, 0%, 100%);
+    --color-text__subtle: hsla(0, 0%, 100%, 0.7);
     --color-link: hsl(48, 100%, 50%);
-    --color-link-background: hsla(48, 100%, 50%, 0.15);
+    --color-subtle: hsl(215, 36%, 9%);
+    --color-details: hsla(215, 36%, 9%, .5);
+    --color-details__border: hsla(215, 36%, 9%, 0.75);
+    --color-details__shadow: hsla(215, 36%, 9%, 0.5);
+  }
+
+  @supports (font-variation-settings: normal) {
+    --font-family--base: "Inter var", system-ui, sans-serif;
   }
 }
 
-@import "elements";
-@import "base";
+@import "fonts",
+        "elements",
+        "layout",
+        "syntax";
