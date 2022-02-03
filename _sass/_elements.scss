@@ -252,6 +252,7 @@ kbd, var, code {
 pre {
   padding: calc(var(--spacing-unit) / 4);
   margin-bottom: calc(var(--spacing-unit) / 2);
+  overflow-x: auto;
 
   & > code {
     background: none;

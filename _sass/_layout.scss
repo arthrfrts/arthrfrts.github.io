@@ -77,7 +77,8 @@ body {
     "header header header"
     "content content sidebar"
     "footer footer .";
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
+  gap: calc(var(--spacing-unit) / 2);
 
     @media screen and (max-width: 680px) {
       grid-template-columns: 1fr;
@@ -100,7 +101,6 @@ body {
       letter-spacing: 0.05em;
       color: var(--color-text__subtle);
       margin-top: calc(var(--spacing-unit) / 2 * -1);
-      margin-bottom: var(--spacing-unit);
 
       .type-badge {
         display: inline-block;
