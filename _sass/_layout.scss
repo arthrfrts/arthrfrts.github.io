@@ -385,5 +385,6 @@ body {
 #graph-wrapper {
   background: var(--color-details);
   border-radius: var(--border-radius);
-  height: auto;
+  max-height: 50vh;
+  overflow: hidden;
 }
