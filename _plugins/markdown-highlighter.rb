@@ -2,7 +2,7 @@
 
 # Turns ==something== in Markdown to <mark>something</mark> in output HTML
 
-Jekyll::Hooks.register [:notes], :post_convert do |doc|
+Jekyll::Hooks.register [:posts], :post_convert do |doc|
   replace(doc)
 end
 

@@ -29,6 +29,27 @@ ul, ol, dl, figure,
   color: var(--color-background);
 }
 
+strong, b {
+  font-weight: 700;
+}
+
+em, i {
+  font-style: italic;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+ins, mark {
+  background-color: var(--color-link__hover);
+  text-shadow: 0 2px .5em var(--color-details__shadow);
+  background-clip: text;
+  color: transparent;
+  padding-left: .1em;
+  padding-right: .1em;
+}
+
 /*
   Links
 */
