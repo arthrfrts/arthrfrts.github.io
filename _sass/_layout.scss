@@ -81,12 +81,8 @@ body {
   gap: calc(var(--spacing-unit) / 2);
 
     @media screen and (max-width: 680px) {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "header"
-        "content"
-        "sidebar"
-        "footer";
+      display: flex;
+      flex-flow: column nowrap;
     }
 
     &-header {
