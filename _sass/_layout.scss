@@ -213,6 +213,63 @@ body {
   grid-column-end: end;
 }
 
+.posts-index {
+  .tag-section {
+    margin-top: calc(var(--spacing-unit) * 1.5);
+    margin-bottom: calc(var(--spacing-unit) * 1.5);
+
+    .tag-title {
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 550;
+      background-color: var(--color-details);
+      color: var(--color-text);
+      border-bottom: 1px solid var(--color-details__border);
+      border-radius: var(--border-radius);
+      padding: 0 .5em;
+      margin-bottom: 0;
+    }
+  }
+
+  .posts-list {
+    list-style: none;
+    margin-left: 0;
+
+    .post-item {
+      line-height: 1.125;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: calc(var(--spacing-unit) / 2);
+      padding-bottom: calc(var(--spacing-unit) / 2);
+      padding-left: 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--color-details__border);
+      }
+    }
+
+    a {
+      color: var(--color-text);
+      text-decoration: none;
+
+      .post-title {
+        text-decoration: underline;
+        text-decoration-color: var(--color-details__border);
+      }
+
+      .post-updated-at {
+        font-weight: 450;
+        font-size: var(--font-size__small);
+      }
+
+      &:hover,
+      &:focus {
+        color: var(--color-link__hover);
+      }
+    }
+  }
+}
+
 .search-form {
   .field-container {
     margin-top: .5rem;

@@ -143,6 +143,7 @@ ul, ol {
   li {
     margin-top: calc(var(--spacing-unit) / 4);
     margin-bottom: calc(var(--spacing-unit) / 4);
+    padding-left: calc(var(--spacing-unit) / 6);
   }
 
   ul, ol {
