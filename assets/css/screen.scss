@@ -15,10 +15,6 @@
   --font-size: 16px;
   --font-size__small: .8rem;
 
-  @supports (font-feature-settings: normal) {
-    --font-family__base: "Inter var", system-ui, sans-serif;
-  }
-
   --color-background: hsl(0, 0%, 100%);
   --color-text: hsl(192, 3%, 33%);
   --color-text__subtle: hsla(180, 2%, 33%, 0.5);
@@ -37,10 +33,6 @@
     --color-details: hsla(215, 36%, 9%, .5);
     --color-details__border: hsla(215, 36%, 9%, 0.75);
     --color-details__shadow: hsla(215, 36%, 9%, 0.5);
-  }
-
-  @supports (font-variation-settings: normal) {
-    --font-family--base: "Inter var", system-ui, sans-serif;
   }
 }
 
