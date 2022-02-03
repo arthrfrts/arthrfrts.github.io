@@ -207,6 +207,26 @@ body {
   Garden
 */
 
+.tags-nav {
+  display: flex;
+  flex-flow: row wrap;
+  gap: calc(var(--spacing-unit) / 6);
+  align-items: center;
+
+  & > * {
+    flex: 0 0 auto;
+  }
+
+  a[rel="tag"] {
+    margin-right: 0;
+  }
+}
+
+.nav-label {
+  font-size: var(--font-size__small);
+  font-weight: 600;
+}
+
 .posts-index,
 .posts-map {
   grid-column-start: 1;

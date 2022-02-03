@@ -17,6 +17,7 @@ layout: default
     {% assign sorted_tags = site.tags | sort %}
 
     <nav class="tags-nav">
+      <span class="nav-label">Tópicos:</span>
       {% for tag in sorted_tags %}
 
       {%- assign tag_name = tag | first -%}
