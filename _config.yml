@@ -16,14 +16,14 @@ author:
   url: "https://arthr.me"
 
 # 🌱 settings
-use_html_extension:  false
+use_html_extension: false
 open_external_links_in_new_tab: true
 embed_tweets: false
 
 # Build settings
 livereload: true
 show_drafts: true
-incremental: true
+# incremental: true
 
 defaults:
   - scope:
@@ -42,26 +42,24 @@ include:
   - _pages
 
 exclude:
-- _includes/posts_graph.json
+  - _includes/posts_graph.json
 
 # Plugin settings
 plugins:
-- jekyll-feed
-- jekyll-json-feed
-- jekyll-sitemap
-- jekyll-seo-tag
-- jekyll-archives
-- jekyll-loading-lazy
-- jekyll-last-modified-at
+  - jekyll-feed
+  - jekyll-json-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  # - jekyll-archives
+  - jekyll-loading-lazy
+  - jekyll-last-modified-at
 
 # Plugin: jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  permalinks:
-    category: "/jardim/:name/"
-    tag: "/jardim/tags/:name/"
+# jekyll-archives:
+#   enabled:
+#     - tags
+#   permalinks:
+#     tag: "/jardim/tags/:name/"
 
 # Plugin: jekyll-seo-tag
 twitter:
