@@ -23,7 +23,7 @@ embed_tweets: false
 # Build settings
 livereload: true
 show_drafts: true
-# incremental: true
+incremental: true
 
 defaults:
   - scope:
