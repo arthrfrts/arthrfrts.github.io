@@ -18,6 +18,8 @@ Algumas citações do texto _[It’s Your Friends Who Break Your Heart](https://
 
 > In the most stable friendships, people tend to stand up for each other in each other’s absence; trust and confide in each other; support each other emotionally; offer help if it’s required; try to make each other happy; and keep each other up-to-date on positive life developments.
 
+> The more hours you’ve put into this chaotic business of living, the more you crave a quieter, more nurturing third thing, I think. This needn’t mean dull. The friends I have now, who’ve come all this distance, who are part of my aging plan, include all kinds of joyous goofballs and originals. There’s loads of open country between enervation and intoxication. It’s just a matter of identifying where to pitch the tent. Finding that just-right patch of ground, you might even say, is half the trick to growing old.
+
 Essa, especialmente, traduz amizade como eu nunca antes consegui expressar. A ênfase é minha:
 
 > Laura Carstensen told me during our chat that good friends are for many people a key source of “unconditional positive regard,” a phrase I keep turning over and over in my mind.
