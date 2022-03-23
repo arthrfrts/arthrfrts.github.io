@@ -2,10 +2,22 @@
   "actions" : {
     "build" : {
       "enabled" : true,
+      "postActions" : [
+        {
+          "sound" : "Blow",
+          "type" : "sound"
+        }
+      ],
       "script" : "#!\/bin\/sh\nbundle update"
     },
     "clean" : {
       "enabled" : true,
+      "postActions" : [
+        {
+          "sound" : "Basso",
+          "type" : "sound"
+        }
+      ],
       "script" : "#!\/bin\/sh\nbundle exec jekyll clean"
     },
     "run" : {
@@ -13,6 +25,5 @@
       "script" : "#!\/bin\/sh\nbundle exec jekyll serve"
     }
   },
-  "identifier" : "27AA16CD-4EAC-4232-9FBD-11D0CB849809",
-  "openLogOnRun" : "fail"
+  "openLogOnRun" : "start"
 }
