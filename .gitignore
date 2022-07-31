@@ -1,18 +1,6 @@
-# Generated website directory
+*.gem
+.bundle
+.sass-cache
 _site/
-
-# Lockfile
 Gemfile.lock
-
-# Sass cache
-.sass-cache/
-
-# Jekyll cache & metadata
-.jekyll-cache/
-.jekyll-metadata
-
-# Notes graph metadata
-_includes/posts_graph.json
-
-# Obsidian config
-.obsidian/
+**/.ruby-version
