@@ -1,36 +1,17 @@
-# Meu Jardim Digital 🌱
+# Personal Website
 
-Olá, eu sou o Arthur e esse é o meu [jardim digital](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/).
+This is my public GitHub showcase, available at <https://arthr.dev>. It hosts my most recent projects and current interests.
 
-Meu jardim digital é meio blog, meio wiki. Você pode conferir ele como um blog clássico, com organização cronológica, através dos feeds [JSON](https://arthr.me/feed.json) e [RSS](https://arthr.me/feed.xml), mas você pode explorar ele livremente como uma wiki visitando o início do [jardim](https://arthr.me/jardim).
+It's mostly a [Jekyll website](https://jekyllrb.com) hosted with GitHub Pages and using the GitHub API to grab my account data. If you want to read what I'm writing these days, visit my blog at <https://arthr.me/>.
 
-Ele é feito com [Jekyll](https://jekyllrb.com), que é um gerador de blogs, e usa o [modelo de jardins digitais de Maxime Vaillancourt](https://github.com/maximevaillancourt/digital-garden-jekyll-template), que transforma o site em uma wiki com links bi-direcionais e um mapa de anotações. Eu adaptei os plugins de Maxime para interpretar rascunhos e posts como notas, e organizo elas por tags.
+## Installation
 
-## Instalação
+To install and run this repo locally, [install Jekyll in your machine](https://jekyllrb.com/docs/installation/), clone this repo and then:
 
-Você precisa ter o Jekyll instalado. Veja como seguindo [essas instruções](http://jekyllrb.com/docs/installation/).
-
-Depois de clonar esse repositório, você precisa instalar as dependências que eu uso para executar o Jekyll e construir o site. Para isso, execute no terminal:
-
-```zsh
-bundle install
+```bash
+$ cd arthrfrts.github.io
+$ bundle
+$ bundle exec jekyll serve
 ```
 
-Pode demorar um pouco, principalmente se você está instalando as dependências no Windows. Depois que tudo terminar, você pode executar o site localmente, para fazer modificações antes de publicá-lo:
-
-
-```zsh
-bundle exec jekyll serve
-```
-
-E para criar a versão final, pronta para publicação, você pode executar esse comando:
-
-```zsh
-bundle exec jekyll build
-```
-
-O arquivo `_config.yml` já configura como esses comandos devem funcionar, então você não precisa se preocupar com opções como `--drafts` ou `--future`.
-
-## Copy-it-right
-
-O código desse site está sob a [licença MIT](LICENSE). Você pode copiar e reutilizá-lo livremente. O conteúdo está disponível sob a licença [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Now you can browse to <http://localhost:4000> and see the local copy of this repo in action.
