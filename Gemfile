@@ -1,14 +1,13 @@
 source 'https://rubygems.org'
 
-gem "jekyll", "~> 4.2"
-
-gem "jekyll-github-metadata", group: :jekyll_plugins
-gem "jekyll-octicons", group: :jekyll_plugins
-gem "jemoji", group: :jekyll_plugins
+gem 'github-pages', group: :jekyll_plugins
+gem "jekyll-github-metadata"
+gem "jekyll-octicons"
+gem "jemoji"
 
 install_if -> { Gem.win_platform? } do
-  gem "wdm", "~> 0.1.1"
-  gem "tzinfo", "~> 2.0.4"
+  gem "wdm"
+  gem "tzinfo"
   gem "tzinfo-data"
 end
 
