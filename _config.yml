@@ -8,10 +8,20 @@ baseurl: ""
 lang: pt-BR
 timezone: America/Sao_Paulo
 
+permalink: /:slugified_categories/:year/:month/:day/:title/
+
 author:
   name: Arthur Freitas
   url: https://arthr.me
-  picture: //gravatar.com/avatar/63d8285c2a55e1d4fefe7747e2c17ead9d3654dc39c4791adf088484105e5000?s=512
+  picture: https://gravatar.com/avatar/63d8285c2a55e1d4fefe7747e2c17ead9d3654dc39c4791adf088484105e5000?s=512
+
+# Theme
+nav_menu:
+  - sobre.md
+  - arquivo.md
+  - links.md
+  - contato.md
+  - aleatorio.md
 
 plugins:
   - jekyll-feed
@@ -19,13 +29,16 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-json-feed
-  - jekyll-remote-theme
+  - jekyll-redirect-from
+  - jekyll-relative-links
 
 # Plugin: jekyll-feed
 feed:
   tags: true
 
 # Plugin: jekyll-seo-tag
+logo: "https://gravatar.com/avatar/63d8285c2a55e1d4fefe7747e2c17ead9d3654dc39c4791adf088484105e5000?s=512"
+
 social:
   name: Arthur Freitas
   links:
@@ -40,6 +53,3 @@ seo_paginator_message: "Página %<current>s de %<total>s — "
 # Plugin: jekyll-paginate
 paginate: 12
 paginate_path: /pagina/:num/
-
-# Plugin: jekyll-remote-theme
-remote_theme: poole/hyde@v2.1.0
