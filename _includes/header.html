@@ -1,0 +1,30 @@
+<header class="site-header">
+  <h3 class="site-title">
+    <a class="h-card" href="{{- site.baseurl | prepend: site.url -}}">
+
+      {% if site.logo -%}
+        <span class="site-avatar">
+          <img
+            src="{{ site.author.picture }}"
+            alt=""
+            role="presentation"
+          />
+        </span>
+      {%- endif %}
+
+      {{ site.title -}}
+    </a>
+  </h3>
+
+  <nav class="site-menu">
+    <h4 class="a11y-label">Menu</h4>
+
+    {% for item in site.nav_menu -%}
+      {%- assign menu_item = site.pages | where: "path", item | first -%}
+
+      <a href="{{ menu_item.url | relative_url }}" class="menu-item {% if page.url == menu_item.url %}_current{% endif %}">
+        {{- menu_item.title -}}
+      </a>
+    {%- endfor %}
+  </nav>
+</header>

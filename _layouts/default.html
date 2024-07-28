@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{- page.lang | default: site.lang -}}">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>
+        {%- if page.title -%}
+          {{- page.title }} — {{ site.title -}}
+        {%- else -%}
+          {{- site.title -}}
+        {%- endif -%}
+      </title>
+
+      {% seo title=false %}
+
+      <link rel="stylesheet" media="screen" href="{{ '/assets/fonts.css' | relative_url }}" />
+      <link rel="stylesheet" media="screen" href="{{ '/assets/screen.css' | relative_url }}" />
+
+      {%- for link_url in site.social.links -%}
+        <link rel="me" href="{{ link_url }}" />
+      {% endfor %}
+
+      {% feed_meta %}
+      {% json_feed_meta %}
+    </head>
+    <body id="site">
+      {% include header.html %}
+
+    </body>
+</html>

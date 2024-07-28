@@ -1,0 +1,32 @@
+.site-title {
+  font-size: 1rem;
+  font-family: 'Mort Modern', serif;
+
+}
+
+.site-title .h-card {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-avatar {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  background-color: #ffd949;
+}
+
+.site-title img {
+  width: 5.5em;
+  height: 5.5em;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+}
+
+
+.site-avatar:hover,
+.site-avatar:focus {
+  background: transparent;
+}
