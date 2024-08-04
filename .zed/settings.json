@@ -1,0 +1,10 @@
+{
+  "ensure_final_newline_on_save": true,
+  "languages": {
+    "MD": {
+      "tab_size": 2
+    }
+  },
+  "remove_trailing_whitespace_on_save": true,
+  "tab_size": 2
+}

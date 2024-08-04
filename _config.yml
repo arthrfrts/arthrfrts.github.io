@@ -1,70 +1,22 @@
-layout: sidebar
-style: light
+title: Arthur Freitas
+description: >-
+  Eu sou um desenvolvedor web em Porto Alegre, Brasil.
+
+url: https://arthr.me
+email: email@arthr.me
+lang: pt-BR
+
+author:
+  name: Arthur Freitas
+  url: https://arthr.me
+  picture: "//gravatar.com/avatar/63d8285c2a55e1d4fefe7747e2c17ead9d3654dc39c4791adf088484105e5000?size=512"
+
+social:
+  name: Arthur Freitas
+  links:
+    - https://www.tumblr.com/arthrfrts
+    - https://letterboxd.com/arthrfrts
+    - https://github.com/arthrfrts
 
 plugins:
-  - jekyll-octicons
-  - jekyll-github-metadata
-  - jemoji
-
-permalink: /:year/:month/:day/:title/
-
-defaults:
-  - scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: "post"
-
-projects:
-  sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
-  limit: 9
-  exclude:
-    archived: false
-    forks: true
-    projects:
-      - arthrfrts.github.io
-      - arthrfrts
-
-social_media:
-  # behance: your_username
-  # dribbble: your_username
-  # facebook: your_username
-  # hackerrank: your_username
-  # instagram: your_username
-  keybase: arthr
-  linkedin: arthrfrts
-  # mastodon: your_username
-  tumblr: https://arthrfrts.tumblr.com
-  # stackoverflow: your_user_id
-  # telegram: your_username
-  twitter: arthrfrts
-  # unsplash: your_username
-  # vk: your_username
-  # website: https://arthr.me
-  # youtube: your_username
-
-topics:
-  - name: HTML
-    web_url: https://github.com/topics/html
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
-  - name: Jekyll
-    web_url: https://jekyllrb.com/
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jekyll/jekyll.png
-  - name: Svelte
-    web_url: https://svelte.dev/
-    image_url: https://raw.githubusercontent.com/github/explore/42198dc9113595ddd22cc12771bb719c8cf08b67/topics/svelte/svelte.png
-  - name: Godot
-    web_url: https://godotengine.org/
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/godot/godot.png
-  - name: Web Components
-    web_url: https://www.webcomponents.org/
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/web-components/web-components.png
-  - name: WordPress
-    web_url: https://wordpress.org/
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/wordpress/wordpress.png
+  - jekyll-seo-tag

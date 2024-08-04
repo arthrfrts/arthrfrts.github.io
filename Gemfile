@@ -1,9 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'github-pages', group: :jekyll_plugins
-gem "jekyll-github-metadata"
-gem "jekyll-octicons"
-gem "jemoji"
+gem 'jekyll', group: :jekyll_plugins
+gem "webrick", "~> 1.7"
 
 install_if -> { Gem.win_platform? } do
   gem "wdm"
@@ -11,4 +9,4 @@ install_if -> { Gem.win_platform? } do
   gem "tzinfo-data"
 end
 
-gem "webrick", "~> 1.7"
+gem "jekyll-seo-tag", "~> 2.8", :group => :jekyll_plugins
