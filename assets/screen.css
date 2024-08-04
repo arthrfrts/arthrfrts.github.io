@@ -55,12 +55,6 @@ h1 {
   font-weight: 900;
 }
 
-@media screen and (width > 960px) {
-  h1 {
-    font-size: 3.5rem;
-  }
-}
-
 a.avatar {
   display: inline-block;
   background: var(--fg-color);
