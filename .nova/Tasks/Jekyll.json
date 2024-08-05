@@ -22,7 +22,7 @@
     },
     "run" : {
       "enabled" : true,
-      "script" : "#!\/bin\/sh\nbundle exec jekyll serve"
+      "script" : "#!\/bin\/sh\nbundle exec jekyll serve --livereload"
     }
   },
   "openLogOnRun" : "start"
