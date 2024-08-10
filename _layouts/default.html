@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{{ site.title }}</title>
+
+    {%- seo title=false -%}
+    <link rel="stylesheet" href="{%- link assets/fonts.css -%}" />
+    <link rel="stylesheet" href="{%- link assets/screen.css -%}" />
+    <link rel="icon" type="image/png" href="{%- link assets/favicon.png -%}" />
+  </head>
+  <body class="page h-card">
+    <a class="u-url avatar" href="{{ site.url | absolute_url }}" rel="me">
+      <img
+        class="u-photo" src="{{ site.author.picture }}" alt="{{ site.author.name }}" width="86" height="86" />
+    </a>
+
+    {{ content }}
+  </body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const randomSet = Math.floor(Math.random() * 7) + 1;
+
+      const root = document.documentElement;
+
+      root.style.setProperty('--bg-color', `var(--bg-color-${randomSet})`);
+      root.style.setProperty('--fg-color', `var(--fg-color-${randomSet})`);
+    });
+  </script>
+</html>

@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Mort Modern 12";
+  src: url("/assets/fonts/mort-modern-italic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mort Modern 12";
+  src: url("/assets/fonts/mort-modern.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/fonts/work-sans-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/fonts/work-sans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/fonts/work-sans-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/fonts/work-sans-bolditalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}

@@ -1,0 +1,93 @@
+:root {
+  --bg-color-1: #ff757d;
+  --fg-color-1: #2f2d76;
+  --bg-color-2: #e1e7f3;
+  --fg-color-2: #2e4d61;
+  --bg-color-3: #111;
+  --fg-color-3: #fff;
+  --bg-color-4: #078378;
+  --fg-color-4: #fffcf0;
+  --bg-color-5: #f9f7ee;
+  --fg-color-5: #484ab3;
+  --bg-color-6: #078378;
+  --fg-color-6: #fffcf0;
+  --fg-color-7: #fff;
+  --bg-color-7: #111;
+
+  --bg-color: #fff;
+  --fg-color: #111;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--fg-color);
+  font-family: "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.page {
+  width: 100%;
+  max-width: 85rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5vw;
+}
+
+.page > * {
+  max-width: 45rem;
+}
+
+h1 {
+  font-family: "Mort Modern 12", Georgia, Cambria, Cochin, serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+a.avatar {
+  display: inline-block;
+  background: var(--fg-color);
+  border-radius: 50%;
+  line-height: 0;
+  transition: background-color 250ms ease;
+  overflow: hidden;
+}
+
+a.avatar:hover,
+a.avatar:focus {
+  background: var(--bg-color);
+}
+
+a {
+  color: currentColor;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-style: double;
+  transition: all 250ms ease;
+}
+
+a:hover,
+a:focus {
+  text-decoration-style: wavy;
+  background-color: var(--fg-color);
+  color: var(--bg-color);
+}
+
+img {
+  mix-blend-mode: luminosity;
+}
+
+img:hover,
+img:focus {
+  mix-blend-mode: normal;
+}

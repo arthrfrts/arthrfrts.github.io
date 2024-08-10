@@ -1,0 +1,29 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "postActions" : [
+        {
+          "sound" : "Blow",
+          "type" : "sound"
+        }
+      ],
+      "script" : "#!\/bin\/sh\nbundle update"
+    },
+    "clean" : {
+      "enabled" : true,
+      "postActions" : [
+        {
+          "sound" : "Basso",
+          "type" : "sound"
+        }
+      ],
+      "script" : "#!\/bin\/sh\nbundle exec jekyll clean"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nbundle exec jekyll serve --livereload"
+    }
+  },
+  "openLogOnRun" : "start"
+}

@@ -1,0 +1,22 @@
+title: Arthur Freitas
+description: >-
+  Eu sou um desenvolvedor web em Porto Alegre, Brasil.
+
+url: https://arthr.me
+email: email@arthr.me
+lang: pt-BR
+
+author:
+  name: Arthur Freitas
+  url: https://arthr.me
+  picture: "//gravatar.com/avatar/63d8285c2a55e1d4fefe7747e2c17ead9d3654dc39c4791adf088484105e5000?size=512"
+
+social:
+  name: Arthur Freitas
+  links:
+    - https://www.tumblr.com/arthrfrts
+    - https://letterboxd.com/arthrfrts
+    - https://github.com/arthrfrts
+
+plugins:
+  - jekyll-seo-tag
