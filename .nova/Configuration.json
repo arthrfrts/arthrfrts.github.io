@@ -1,5 +1,6 @@
 {
   "editor.default_syntax" : "liquid-html",
+  "workspace.art_style" : 0,
   "workspace.color" : 9,
   "workspace.name" : "arthr.me",
   "workspace.preview_append_paths" : false,
