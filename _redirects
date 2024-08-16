@@ -1,3 +1,6 @@
+---
+---
+
 /post/*  https://irrelefante.com.br/post/:splat  308
 /.well-known/host-meta*  https://fed.brid.gy/.well-known/host-meta:splat  302
 /.well-known/webfinger*  https://fed.brid.gy/.well-known/webfinger  302
