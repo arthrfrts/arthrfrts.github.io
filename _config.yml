@@ -14,9 +14,13 @@ author:
 social:
   name: Arthur Freitas
   links:
+    - https://irrelefante.com.br/
     - https://www.tumblr.com/arthrfrts
     - https://letterboxd.com/arthrfrts
+    - https://www.flickr.com/people/arthrfrts
     - https://github.com/arthrfrts
+    - https://moth.social/@arthr
+    - https://bsky.app/profile/arthr.me
 
 plugins:
   - jekyll-seo-tag
