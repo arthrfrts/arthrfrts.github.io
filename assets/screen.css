@@ -31,7 +31,8 @@ html {
 body {
   background: var(--bg-color);
   color: var(--fg-color);
-  font-family: "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Recursive", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.45;
 }
@@ -49,9 +50,32 @@ body {
 }
 
 h1 {
-  font-family: "Mort Modern 12", Georgia, Cambria, Cochin, serif;
+  font-variation-settings:
+    "CASL" 1,
+    "CSRV" 1;
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 1000;
+}
+
+strong {
+  animation: 3s ease 1s animate infinite alternate;
+  font-variation-settings:
+    "MONO" 1,
+    "wght" 300;
+}
+
+@keyframes animate {
+    0% {
+      font-variation-settings:
+        "CASL" 0.00,
+        "wght" 300;
+    }
+
+    100% {
+      font-variation-settings:
+        "CASL" 1.00,
+        "wght" 900;
+    }
 }
 
 a.avatar {

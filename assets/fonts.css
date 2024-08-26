@@ -46,3 +46,11 @@
   font-style: italic;
   font-display: swap;
 }
+
+
+@font-face {
+  font-family: "Recursive";
+  src: url("/assets/fonts/recursive.woff2") format("woff2");
+  font-weight: 300 1000;
+  font-style: oblique 0deg 15deg;
+}
