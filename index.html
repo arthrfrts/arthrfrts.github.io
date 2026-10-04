@@ -1,73 +1,273 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arthur Freitas is a web developer</title>
-    <meta name="description" content="Creates lovely, handcrafted experiences on the web for nice people around the world." />
-    <link rel="icon" href="/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible+Mono:wght@200..800&display=swap;" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arthur Freitas — desenvolvedor front-end</title>
+    <meta name="description" content="Arthur Freitas, desenvolvedor front-end em Porto Alegre com foco em acessibilidade, semântica, interação e animação (e manutenção).">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f7f7f7" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0e1415" media="(prefers-color-scheme: dark)">
+    <link rel="canonical" href="https://arthr.dev/">
+    <link rel="alternate" hreflang="pt-BR" href="https://arthr.dev/">
+    <link rel="alternate" hreflang="en" href="https://arthr.dev/en/">
+    <link rel="alternate" hreflang="x-default" href="https://arthr.dev/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;600&amp;family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;1,400&amp;family=Gloock&amp;display=swap">
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <main class="site page">
-      <header class="h-card">
-        <img class="u-photo" src="https://gravatar.com/avatar/c0d2d45d7dc2714bfe950b3a451b8419d1fad9acddf507e6c7b771adc5981106?size=512" alt="Portrait of a man eating a snack" />
+    <a class="skip-link" href="#curriculo">Pular para o currículo</a>
 
-        <h1 class="p-name">
-          Arthur Freitas
-        </h1>
+    <header class="site-header h-card">
+      <div class="page-meta meta-text">
+        <p class="path">
+          <a class="home u-url u-uid" href="https://arthr.dev/" aria-current="page">arthr.dev</a>
+          <span class="separator" aria-hidden="true">/</span>
+          desenvolvedor front-end
+        </p>
+        <nav class="language-switch" aria-label="Idioma">
+          <a class="link" href="/?idioma=en" hreflang="en" rel="alternate" lang="en">English</a>
+        </nav>
+      </div>
 
-        <ul class="links">
-          <li>
-            <a class="u-email" href="mailto:email@arthr.dev">E-mail</a>
-          </li>
-          <li>
-            <a class="u-url" href="https://arthr.me/" rel="me">Blog</a>
-          </li>
-          <li>
-            <a href="https://github.com/arthrfrts" rel="me">GitHub</a>
-          </li>
-          <li>
-            <a href="/cv.pdf">CV</a>
-          </li>
-        </ul>
-      </header>
+      <h1 class="name p-name">
+        <span class="p-given-name">Arthur</span> <span class="p-family-name">Freitas</span>
+      </h1>
 
-      <article class="bio">
-        <h2 class="a11y-hidden">About me</h2>
+      <p class="bio p-note">Desenvolvedor front-end com foco em acessibilidade, semântica, interação e animação <ins class="proof-mark">(e manutenção)</ins>.</p>
 
-        <p>I create lovely, handcrafted web experiences for nice people around the world.</p>
+      <p class="status">
+        Hoje sou <strong class="role p-job-title">engenheiro de websites</strong> na <strong class="company p-org">ABC Fitness</strong>.
+        Moro em <span class="p-locality">Porto Alegre</span>, <abbr class="p-region" title="Rio Grande do Sul">RS</abbr>, <span class="p-country-name">Brasil</span>.
+      </p>
 
-        <p>I’m a senior front-end developer with more than 15 years of experience crafting high-performance, accessible, and user-friendly experiences. I’m particularly skilled in modern JavaScript frameworks, design systems, and enterprise CMS platforms. I’ve successfully led cross-functional teams, developed internal tools, and made tangible performance improvements. I’m really passionate about semantic HTML, CSS architecture, and helping bridge the gap between technical solutions and business needs.</p>
-      </article>
+      <ul class="contact-list" role="list" aria-label="Contato">
+        <li class="item">
+          <span class="label meta-text" aria-hidden="true">E-mail</span>
+          <a class="u-email" href="mailto:email@arthr.dev" rel="me">email@arthr.dev</a>
+        </li>
+        <li class="item">
+          <span class="label meta-text" aria-hidden="true">Site</span>
+          <a class="u-url" href="https://arthr.me/" rel="me">arthr.me</a>
+        </li>
+        <li class="item">
+          <span class="label meta-text" aria-hidden="true">Tel.</span>
+          <a class="p-tel" href="tel:+5551999840631">+55 51 999 840 631</a>
+        </li>
+        <li class="item">
+          <span class="label meta-text" aria-hidden="true">GitHub</span>
+          <a class="u-url" href="https://github.com/arthrfrts" rel="me"><span class="_visually-hidden">GitHub: </span>arthrfrts</a>
+        </li>
+        <li class="item">
+          <span class="label meta-text" aria-hidden="true">LinkedIn</span>
+          <a class="u-url" href="https://www.linkedin.com/in/arthrfrts" rel="me"><span class="_visually-hidden">LinkedIn: </span>arthrfrts</a>
+        </li>
+      </ul>
+    </header>
 
-      <section class="projects">
-        <h2 class="work">Recent work for:</h2>
-
-        <ul>
-          <li><strong>Pfizer:</strong> <a href="https://www.cuidamosjuntos.com.br/">Cuidamos Juntos</a> — system architecture and front-end engineering.</li>
-          <li><strong>Renner:</strong> <a href="https://www.camicado.com.br/">Camicado</a> — e-commerce refresh and design system development.</li>
-          <li><strong>Sicredi:</strong> <a href="https://www.sicredi.com.br/coop/botucarai/noticias/institucional/sicredi-x-uma-nova-experiencia-digital-segura-e-confiavel/">Sicredi X</a> — app prototyping and front-end engineering.</li>
-          <li><strong>Vnda:</strong> <a href="https://www.insiderstore.com.br/">Insider</a>, <a href="https://www.haight.com.br/">Haight</a> — e-commerce development.</li>
-        </ul>
+    <main class="site-main h-resume" id="curriculo" tabindex="-1">
+      <section class="resume-summary" aria-labelledby="resumo">
+        <h2 class="label meta-text p-name" id="resumo">Bio</h2>
+        <p class="text p-summary">Escrevo HTML, CSS e JavaScript profissionalmente desde 2010: para agências, e-commerces e grandes marcas, de temas WordPress e lojas virtuais a <span lang="en">design systems</span> e portais de conteúdo.</p>
       </section>
 
-      <section class="projects">
-        <h2 class="work">I also make some themes:</h2>
+      <section class="resume-section" aria-labelledby="experiencia">
+        <h2 class="title" id="experiencia">Experiência</h2>
 
-        <ul>
-          <li>
-            <strong>Jekyll:</strong> <a href="https://linus.arthr.dev/">Linus</a>, <a href="https://minduim.arthr.dev">Minduim</a>, <a href="https://esporo.github.io/steve/">Steve</a>, <a href="https://esporo.github.io/bean">Bean</a>.
+        <ol role="list">
+          <li class="experience-item p-experience h-event">
+            <p class="dates meta-text">
+              <time class="date dt-start" datetime="2025-10">outubro de 2025</time>
+              <span class="separator" aria-hidden="true">—</span>
+              <span class="_visually-hidden">até</span>
+              hoje
+            </p>
+            <h3 class="role p-name">Engenheiro de websites</h3>
+            <p class="place">
+              <span class="preposition meta-text">em</span>
+              <span class="p-location h-card"><span class="p-name p-org">ABC Fitness</span></span>
+            </p>
+            <p class="description p-description">Desenvolvo os sites comerciais da empresa e gerencio nossos fluxos de versionamento de código e de publicação. Meu foco no momento é modernizar o código-fonte que gerencia e entrega o site para os visitantes, e criar um fluxo de criação de conteúdos ricos para o nosso time de conteúdo.</p>
           </li>
-          <li>
-            <strong>Tumblr:</strong> <a href="https://www.tumblr.com/theme/41318">Shermy</a>, <a href="https://www.tumblr.com/theme/41291">Charlie</a>, <a href="https://www.tumblr.com/theme/41120">Manteiga</a>, <a href="https://github.com/arthrfrts/startr">Startr</a>.
+
+          <li class="experience-item p-experience h-event">
+            <p class="dates meta-text">
+              <time class="date dt-start" datetime="2021-03">março de 2021</time>
+              <span class="separator" aria-hidden="true">—</span>
+              <span class="_visually-hidden">a</span>
+              <time class="date dt-end" datetime="2025-09">setembro de 2025</time>
+            </p>
+            <h3 class="role p-name">Desenvolvedor front-end</h3>
+            <p class="place">
+              <span class="preposition meta-text">em</span>
+              <span class="p-location h-card"><span class="p-name p-org">Compasso / UOL</span></span>
+            </p>
+            <p class="description p-description">Como desenvolvedor alocado, arquitetei e desenvolvi a interface do portal de conteúdos da Pfizer, o Cuidamos Juntos; ajudei na modernização de código para o redesign da Camicado usando <span lang="en">Web Components</span>; desenvolvi e mantive <span lang="en">design systems</span> para empresas como Grendene e Dass; e desenvolvi projetos para outros clientes, como Yamaha, Furukawa e Sicredi.</p>
           </li>
-        </ul>
+
+          <li class="experience-item p-experience h-event">
+            <p class="dates meta-text">
+              <time class="date dt-start" datetime="2018-04">abril de 2018</time>
+              <span class="separator" aria-hidden="true">—</span>
+              <span class="_visually-hidden">a</span>
+              <time class="date dt-end" datetime="2021-02">fevereiro de 2021</time>
+            </p>
+            <h3 class="role p-name">Desenvolvedor front-end</h3>
+            <p class="place">
+              <span class="preposition meta-text">em</span>
+              <span class="p-location h-card"><span class="p-name p-org">Vnda e-commerce</span></span>
+            </p>
+            <p class="description p-description">Liderei o time de <span lang="en">customer success</span>, criando fluxos de teste, solucionando problemas e desenvolvendo novos recursos para as lojas online dos nossos clientes. Também criei fluxos de trabalho internos para ajudar o time a entregar código de maneira mais segura e ágil.</p>
+          </li>
+
+          <li class="experience-item p-experience h-event">
+            <p class="dates meta-text">
+              edições
+              <time class="date dt-start" datetime="2017">2017</time>
+              <span class="separator" aria-hidden="true">—</span>
+              <span class="_visually-hidden">a</span>
+              <time class="date dt-end" datetime="2019">2019</time>
+            </p>
+            <h3 class="role p-name">Webmaster</h3>
+            <p class="place">
+              <span class="preposition meta-text">na</span>
+              <span class="p-location h-card"><span class="p-name p-org">Feira do Livro de Porto Alegre</span></span>
+            </p>
+            <p class="description p-description">Trabalhei com a equipe da maior feira de livros a céu aberto da América Latina para aperfeiçoar o site e permitir que os organizadores gerenciassem os eventos diretamente por ele, integrando agendas e mapas.</p>
+          </li>
+
+          <li class="experience-item p-experience h-event">
+            <p class="dates meta-text">
+              <time class="date dt-start" datetime="2014-03">março de 2014</time>
+              <span class="separator" aria-hidden="true">—</span>
+              <span class="_visually-hidden">a</span>
+              <time class="date dt-end" datetime="2017-02">fevereiro de 2017</time>
+            </p>
+            <h3 class="role p-name">Desenvolvedor WordPress</h3>
+            <p class="place">
+              <span class="preposition meta-text">na</span>
+              <span class="p-location h-card"><span class="p-name p-org">Farol Estúdio</span></span>
+            </p>
+            <p class="description p-description">Desenvolvi temas e plugins e gerenciei a rede multisite de WordPress dos nossos clientes, mantendo todos os sites atualizados e protegidos numa mesma infraestrutura e diminuindo a necessidade de acessar vários painéis ou sistemas de arquivos.</p>
+          </li>
+
+          <li class="experience-item p-experience h-event">
+            <p class="dates meta-text">
+              <time class="date dt-start" datetime="2010-11">novembro de 2010</time>
+              <span class="separator" aria-hidden="true">—</span>
+              <span class="_visually-hidden">a</span>
+              <time class="date dt-end" datetime="2014-02">fevereiro de 2014</time>
+            </p>
+            <h3 class="role p-name">Desenvolvedor front-end</h3>
+            <p class="place">
+              <span class="preposition meta-text">na</span>
+              <span class="p-location h-card"><span class="p-name p-org">EGBR</span></span>
+            </p>
+            <p class="description p-description">Meu primeiro trabalho logo depois da escola. Como estagiário, desenvolvia mini-sites e <span lang="en">landing pages</span> para os clientes das lojas virtuais da EGBR; depois, entrei para a equipe de manutenção, encontrando e corrigindo bugs e adicionando novos recursos aos sites dos clientes.</p>
+          </li>
+        </ol>
       </section>
 
-      <footer>
-        <p>👋 <a href="mailto:email@arthr.dev">email@arthr.dev</a> if you have any questions.</p>
+      <section class="resume-section" aria-labelledby="competencias">
+        <h2 class="title" id="competencias">Competências &amp; tecnologias</h2>
+
+        <div class="skill-index">
+          <div class="intro"></div>
+
+          <div class="groups">
+            <div class="skill-group">
+              <h3 class="title meta-text">HTML</h3>
+              <ul class="list" role="list">
+                <li class="item p-skill">Estruturação semântica do DOM</li>
+                <li class="item p-skill">Melhores práticas em acessibilidade</li>
+                <li class="item p-skill">Geradores estáticos / JAMstack</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="title meta-text">CSS</h3>
+              <ul class="list" role="list">
+                <li class="item p-skill">Recursos modernos (camadas, manipulação de cores, grids etc.)</li>
+                <li class="item p-skill">Técnicas de animação eficientes</li>
+                <li class="item p-skill">Sass/SCSS avançado, Tailwind</li>
+                <li class="item p-skill">Padrões de código para manutenção em larga escala e <span lang="en">design systems</span></li>
+                <li class="item p-skill">Metodologias CSS (BEM, SMACSS, inuit etc.)</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="title meta-text">JavaScript</h3>
+              <ul class="list" role="list">
+                <li class="item p-skill">Frameworks: Astro, Next.js, React, Vue, Svelte</li>
+                <li class="item p-skill">Pipelines: Parcel, Gulp, Webpack etc.</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="title meta-text">Ferramentas</h3>
+              <dl class="terms">
+                <dt class="term meta-text">Agentes</dt>
+                <dd class="detail"><span class="p-skill">Claude Code (e Superpowers)</span>, <span class="p-skill">Cursor</span>, <span class="p-skill">GitHub Copilot</span></dd>
+                <dt class="term meta-text">CMS</dt>
+                <dd class="detail"><span class="p-skill">WordPress</span>, <span class="p-skill">Drupal</span>, <span class="p-skill">MediaWiki</span>, <span class="p-skill">October</span>, <span class="p-skill">Magento</span>, <span class="p-skill">Shopify</span></dd>
+                <dt class="term meta-text">Versionamento</dt>
+                <dd class="detail"><span class="p-skill">Git</span>, <span class="p-skill">SVN</span></dd>
+                <dt class="term meta-text">Gerenciamento</dt>
+                <dd class="detail"><span class="p-skill">Jira</span>, <span class="p-skill">Trello</span>, <span class="p-skill">Basecamp</span></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-section" aria-labelledby="formacao">
+        <h2 class="title" id="formacao">Formação &amp; idiomas</h2>
+
+        <div class="column-pair">
+          <div class="column">
+            <h3 class="title meta-text">Educação</h3>
+            <ul class="education-list" role="list">
+              <li class="item p-education h-event">
+                <span class="course p-name">Bacharelado em Comunicação Social</span>
+                <span class="p-location h-card"><span class="p-name p-org">Unisinos</span></span>,
+                <time class="year dt-end" datetime="2017">2017</time>
+              </li>
+              <li class="item p-education h-event">
+                <span class="course p-name">Técnico em Informática</span>
+                <span class="p-location h-card"><span class="p-name p-org">Instituto Federal do Rio Grande do Sul</span></span>,
+                <time class="year dt-end" datetime="2012">2012</time>
+              </li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h3 class="title meta-text">Idiomas</h3>
+            <ul class="language-list" role="list">
+              <li class="item"><span class="language">Português</span> <span class="level">nativo</span></li>
+              <li class="item"><span class="language">Inglês</span> <span class="level">avançado</span></li>
+              <li class="item"><span class="language">Francês</span> <span class="level">intermediário</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="resume-footer">
+        <section class="contact-card" aria-labelledby="contato">
+          <h2 class="title meta-text" id="contato">Contato</h2>
+          <address class="address p-contact h-card">
+            <span class="p-name _visually-hidden">Arthur Freitas</span>
+            <a class="u-email" href="mailto:email@arthr.dev">email@arthr.dev</a><br>
+            <a class="u-url" href="https://arthr.me/">arthr.me</a><br>
+            <a class="u-url" href="https://github.com/arthrfrts"><span class="_visually-hidden">GitHub: </span>github.com/arthrfrts</a><br>
+            <a class="u-url" href="https://www.linkedin.com/in/arthrfrts"><span class="_visually-hidden">LinkedIn: </span>linkedin.com/in/arthrfrts</a><br>
+            <a class="p-tel" href="tel:+5551999840631">+55 51 999 840 631</a><br>
+            <span class="p-locality">Porto Alegre</span>, <span class="p-region">RS</span> — <span class="p-country-name">Brasil</span>
+          </address>
+        </section>
+
+        <p class="copyright meta-text">© <time class="year" datetime="2026">2026</time> Arthur Freitas</p>
       </footer>
     </main>
   </body>
