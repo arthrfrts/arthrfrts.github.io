@@ -1,14 +1,12 @@
 
 /pt          /         301
-/pt/*        /:splat   301
 /pt-br       /         301
-/pt-br/*     /:splat   301
 /en-us       /en/      301
-/en-us/*     /en/:splat 301
 /en-gb       /en/      301
-/en-gb/*     /en/:splat 301
-
-# Atalhos do currículo
 /curriculo   /         301
 /resume      /en/      301
 /cv          /         302
+/pt/*        /:splat   301
+/pt-br/*     /:splat   301
+/en-us/*     /en/:splat 301
+/en-gb/*     /en/:splat 301
